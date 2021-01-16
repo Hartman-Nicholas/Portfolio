@@ -54,6 +54,8 @@ const ChatApp = () => {
           <a
             href="https://nhartman-chat-app.herokuapp.com/"
             className="btn portfolio__nav-website"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             *To Website
           </a>

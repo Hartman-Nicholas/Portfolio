@@ -54,6 +54,8 @@ const Emaily = () => {
           <a
             href="https://hartman-emaily.herokuapp.com/"
             className="btn portfolio__nav-website"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             *To Website
           </a>
