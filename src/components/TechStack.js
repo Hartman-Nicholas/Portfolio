@@ -9,6 +9,8 @@ import { ReactComponent as HtmlLogo } from "../img/HTML5_Logo.svg";
 import { ReactComponent as JavascriptLogo } from "../img/javascript-4.svg";
 import { ReactComponent as MongodbLogo } from "../img/mongodb.svg";
 import { ReactComponent as JavaLogo } from "../img/java-4.svg";
+import { ReactComponent as SpringLogo } from "../img/spring-3.svg";
+import { ReactComponent as MySQL } from "../img/mysql-5.svg";
 
 const TechStack = () => {
   const theme = useSelector((state) => state.theme);
@@ -37,6 +39,8 @@ const TechStack = () => {
           fill={theme ? "#e76f00" : "#fff"}
           className="techStack__svg"
         />
+        <SpringLogo className="techStack__svg" />
+        <MySQL fill={theme ? "#fff" : "#303030"} className="techStack__svg" />
       </div>
     </section>
   );

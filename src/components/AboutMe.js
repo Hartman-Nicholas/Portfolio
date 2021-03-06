@@ -12,16 +12,16 @@ const AboutMe = () => {
 
       <div className="about-me__body">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Grew up in Sunny South Africa in a small community just outside of
+          Durban, where I spent most of my days between my love of Squash and
+          outdoors with my friends. In 2011 moved up to Johannesburg where I
+          honed my business skills and understanding.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          With the birth of my son and daughter there was shift in priorities
+          and it was off to Stockholm for a safer and more relaxed lifestyle.
+          During this time I rediscovered my love for technology and have been
+          completely taken in with the developer life style.
         </p>
       </div>
 

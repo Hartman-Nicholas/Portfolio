@@ -9,28 +9,26 @@ const MyServices = () => {
         <div className="service">
           <h3>Design + Development</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Clean Website design using the latest React.js techniques and CSS
+            libraries combined with native CSS and SASS. Bringing a clean
+            functional design that speaks to key business requirements.
           </p>
         </div>
         <div className="service">
-          <h3>E-Commerce</h3>
+          <h3>Microservices</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Designing using Microservice architecture which enables the rapid,
+            frequent and reliable delivery of large, complex applications. It
+            also enables an organization to evolve its technology stack.
           </p>
         </div>
         <div className="service">
-          <h3>Codepen</h3>
+          <h3>BackEnd</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Fast and reliable backends using either Node.js with express,
+            graphql, and axios connected to a Mongodb database, or Java spring
+            boot connected to a mySQL database for your application
+            requirements.
           </p>
         </div>
       </div>

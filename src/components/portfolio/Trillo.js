@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import signUp from "../../img/4_project.png";
+import signUp from "../../img/6_project.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -11,7 +11,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const ChatApp = () => {
+const Emaily = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -52,7 +52,7 @@ const ChatApp = () => {
 
         <div className="portfolio__nav">
           <a
-            href="https://nhartman-chat-app.herokuapp.com/"
+            href="https://www.hartofcode.com/projects/trillo/"
             className="btn portfolio__nav-website"
             target="_blank"
             rel="noopener noreferrer"
@@ -77,4 +77,4 @@ const ChatApp = () => {
   );
 };
 
-export default ChatApp;
+export default Emaily;

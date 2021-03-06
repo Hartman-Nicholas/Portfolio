@@ -22,17 +22,17 @@ const MyWork = () => {
 
       <div className="portfolio">
         {/* Portfolio item 01 */}
-        <Link to="/project/signup" className="portfolio__item">
+        <Link to="/project/natours" className="portfolio__item">
           <Img src={Project1} alt="" className="portfolio__img"></Img>
         </Link>
 
         {/* Portfolio item 02 */}
-        <a href="/project/ChatApp" className="portfolio__item">
+        <a href="/project/nexter" className="portfolio__item">
           <Img src={Project2} alt="" className="portfolio__img"></Img>
         </a>
 
         {/* Portfolio item 03 */}
-        <a href="/project/signup" className="portfolio__item">
+        <a href="/project/trillo" className="portfolio__item">
           <Img src={Project3} alt="" className="portfolio__img"></Img>
         </a>
 

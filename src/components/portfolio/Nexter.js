@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import signUp from "../../img/4_project.png";
+import signUp from "../../img/5_project.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -11,7 +11,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Emaily = () => {
+const Nexter = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -52,7 +52,7 @@ const Emaily = () => {
 
         <div className="portfolio__nav">
           <a
-            href="https://hartman-emaily.herokuapp.com/"
+            href="https://www.hartofcode.com/projects/nexter/"
             className="btn portfolio__nav-website"
             target="_blank"
             rel="noopener noreferrer"
@@ -77,4 +77,4 @@ const Emaily = () => {
   );
 };
 
-export default Emaily;
+export default Nexter;
