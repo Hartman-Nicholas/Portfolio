@@ -54,8 +54,6 @@ const Emaily = () => {
           <a
             href="https://www.hartofcode.com/projects/trillo/"
             className="btn portfolio__nav-website"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             *To Website
           </a>

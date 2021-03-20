@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import signUp from "../../img/5_project.png";
+import nexter from "../../img/5_project.png";
+import nexter2 from "../../img/18_project.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -29,7 +30,7 @@ const Nexter = () => {
             The title <strong>of my project</strong>
           </h1>
           <p className="section__subtitle section__subtitle--intro">SignUp</p>
-          <Img src={signUp} alt="profile" className="intro__img"></Img>
+          <Img src={nexter} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
@@ -37,7 +38,7 @@ const Nexter = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Img src={signUp} alt="Computer"></Img>
+          <Img src={nexter2} alt="Computer"></Img>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -54,8 +55,6 @@ const Nexter = () => {
           <a
             href="https://www.hartofcode.com/projects/nexter/"
             className="btn portfolio__nav-website"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             *To Website
           </a>

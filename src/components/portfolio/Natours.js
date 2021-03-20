@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import signUp from "../../img/4_project.png";
+import natours from "../../img/4_project.png";
+import natours2 from "../../img/16_project.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -29,7 +30,7 @@ const Natours = () => {
             The title <strong>of my project</strong>
           </h1>
           <p className="section__subtitle section__subtitle--intro">SignUp</p>
-          <Img src={signUp} alt="profile" className="intro__img"></Img>
+          <Img src={natours} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
@@ -37,7 +38,7 @@ const Natours = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Img src={signUp} alt="Computer"></Img>
+          <Img src={natours2} alt="Computer"></Img>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -54,8 +55,6 @@ const Natours = () => {
           <a
             href="https://www.hartofcode.com/projects/natours/"
             className="btn portfolio__nav-website"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             *To Website
           </a>
