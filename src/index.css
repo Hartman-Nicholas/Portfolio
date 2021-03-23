@@ -13,7 +13,7 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-light: #fff;
+  --clr-light: #f8f9fa;
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
 
@@ -35,6 +35,14 @@
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
 }
 
 section {
@@ -438,6 +446,16 @@ h3 {
   opacity: 0.75;
 }
 
+.portfolio-item-p {
+  margin-top: -3rem;
+}
+
+@media (min-width: 600px) {
+  .portfolio-item-p {
+    margin-top: 0rem;
+  }
+}
+
 /* My TechStack  */
 
 .my-techStack {
@@ -569,4 +587,88 @@ h3 {
   .portfolio__nav-website {
     margin-left: 1em;
   }
+}
+
+/* Certificate styles */
+
+.certPortfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 30px;
+  justify-items: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section__cert {
+  padding-bottom: 6rem;
+  padding-top: 0rem;
+  margin-top: -4rem;
+}
+
+.section__cert--img {
+  display: none;
+  width: 100%;
+}
+
+.section__cert--title {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+}
+
+.section__cert--heading {
+  width: 100%;
+  margin: 0;
+  font-size: var(--fs-h3);
+  background: var(--clr-accent);
+  padding: 0.25em 1em;
+  font-family: var(--ff-secondary);
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .certPortfolio {
+    max-width: 1000px;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .section__cert--img {
+    display: block;
+    width: 50%;
+  }
+
+  .section__cert--heading {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: 50%;
+    margin: 0;
+    font-size: var(--fs-h3);
+    background: var(--clr-accent);
+    padding: 0.25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .section__cert {
+    padding: 3rem;
+    padding-bottom: 6rem;
+    padding-top: 0rem;
+    margin-top: -4rem;
+  }
+
+  .section__cert--title {
+    width: 60%;
+  }
+}
+
+.margin_top_3 {
+  margin-top: 3rem;
 }

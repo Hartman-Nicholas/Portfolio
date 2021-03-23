@@ -22,6 +22,7 @@ const MyWork = () => {
 
       <div className="portfolio">
         {/* Portfolio item 01 */}
+
         <Link to="/project/natours" className="portfolio__item">
           <Img src={Project1} alt="" className="portfolio__img"></Img>
         </Link>

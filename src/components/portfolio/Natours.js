@@ -27,14 +27,16 @@ const Natours = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            The title <strong>of my project</strong>
+            Natours <strong>Outdoors</strong>
           </h1>
-          <p className="section__subtitle section__subtitle--intro">SignUp</p>
+          <p className="section__subtitle section__subtitle--intro">
+            Where life happens
+          </p>
           <Img src={natours} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
-          <p>
+          <p className="portfolio-item-p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
