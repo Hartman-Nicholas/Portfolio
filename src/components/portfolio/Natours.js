@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import natours from "../../img/4_project.png";
-import natours2 from "../../img/16_project.png";
+import natoursHome from "../../img/4_natoursHome.png";
+import natoursSample from "../../img/16_natoursSample.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -32,7 +32,7 @@ const Natours = () => {
           <p className="section__subtitle section__subtitle--intro">
             Where life happens
           </p>
-          <Img src={natours} alt="profile" className="intro__img"></Img>
+          <Img src={natoursHome} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
@@ -40,7 +40,7 @@ const Natours = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Img src={natours2} alt="Computer"></Img>
+          <Img src={natoursSample} alt="Computer"></Img>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.

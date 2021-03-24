@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import nexterHome from "../../img/5_nexterHome.png";
-import nexterSample from "../../img/18_nexterSample.png";
+import signUp from "../../img/7_signUpHome.png";
+import signUp2 from "../../img/19_SignUpSample.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Nexter = () => {
+const Natours = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -27,18 +27,20 @@ const Nexter = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            The title <strong>of my project</strong>
+            Natours <strong>Outdoors</strong>
           </h1>
-          <p className="section__subtitle section__subtitle--intro">SignUp</p>
-          <Img src={nexterHome} alt="profile" className="intro__img"></Img>
+          <p className="section__subtitle section__subtitle--intro">
+            Where life happens
+          </p>
+          <Img src={signUp} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
-          <p>
+          <p className="portfolio-item-p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Img src={nexterSample} alt="Computer"></Img>
+          <Img src={signUp2} alt="Computer"></Img>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -53,7 +55,7 @@ const Nexter = () => {
 
         <div className="portfolio__nav">
           <a
-            href="https://www.hartofcode.com/projects/nexter/"
+            href="https://hartman-signup.herokuapp.com/"
             className="btn portfolio__nav-website"
           >
             *To Website
@@ -70,10 +72,11 @@ const Nexter = () => {
             load thank you for your patience.
           </p>
         </div>
+
         <Footer />
       </Section>
     </ThemeProvider>
   );
 };
 
-export default Nexter;
+export default Natours;

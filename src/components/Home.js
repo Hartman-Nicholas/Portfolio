@@ -1,5 +1,5 @@
 import React from "react";
-import profilePicture from "../img/1_Img.png";
+import profilePicture from "../img/1_NicProfile.png";
 import Img from "../styles/components/img";
 
 const Home = () => {

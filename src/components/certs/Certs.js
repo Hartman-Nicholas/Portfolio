@@ -15,14 +15,15 @@ import { HashLink } from "react-router-hash-link";
 
 import CertsCardLink from "./CertsCardLink";
 import CertsCardExp from "./CertsCardUdemy";
-import * as info from "./info";
+import * as udemy from "../infoObjects/CertsInfoUdemy";
+import * as linkedIn from "../infoObjects/CertsInfoLinkedin";
 
 const Certs = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
   const renderUdemyCert = () => {
-    const certs = info.udemy.map((value) => {
+    const certs = udemy.udemy.map((value) => {
       return (
         <CertsCardExp
           key={value.id}
@@ -35,7 +36,7 @@ const Certs = () => {
   };
 
   const renderLinkedinCert = () => {
-    const certs = info.linkedIn.map((value) => {
+    const certs = linkedIn.linkedIn.map((value) => {
       return (
         <CertsCardLink
           key={value.id}

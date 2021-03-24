@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import signUp from "../../img/6_project.png";
+import trilloHome from "../../img/6_trilloHome.png";
+import trilloSample from "../../img/17_trilloSample.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -29,7 +30,7 @@ const Emaily = () => {
             The title <strong>of my project</strong>
           </h1>
           <p className="section__subtitle section__subtitle--intro">SignUp</p>
-          <Img src={signUp} alt="profile" className="intro__img"></Img>
+          <Img src={trilloHome} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
@@ -37,7 +38,7 @@ const Emaily = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Img src={signUp} alt="Computer"></Img>
+          <Img src={trilloSample} alt="Computer"></Img>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
