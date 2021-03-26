@@ -17,7 +17,8 @@
 }
 
 .slider {
-  background-color: #ccc;
+  background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+  background-size: cover;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -27,29 +28,35 @@
   transition: 0.4s;
   width: 85%;
   height: 70%;
+  transition: 0.9s;
 }
 
 .slider:before {
-  background-color: #fff;
-  bottom: 4px;
+  background-color: orange;
+  top: 0;
   content: "";
-  height: 16px;
-  left: 4px;
+  height: 100%;
+  left: 0;
   position: absolute;
   transition: 0.4s;
-  width: 16px;
+  width: 50%;
 }
 
 input:checked + .slider {
-  background-color: #16e0bd;
+  background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+  background-size: cover;
+  transition: 0.9s;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
+  background: #fff;
 }
 
 .slider.round {
   border-radius: 34px;
+  box-shadow: 0px 2px 5px 1px gray;
+  transition: all 0.9s;
 }
 
 .slider.round:before {
