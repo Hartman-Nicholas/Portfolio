@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components";
 
 const Section = styled.section`
-  margin: 0;
+  max-width: 1500px;
+  margin: 0 auto;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;

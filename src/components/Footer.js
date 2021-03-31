@@ -8,12 +8,19 @@ const Footer = () => {
       </a>
       <ul className="social-list">
         <li className="social-list__item">
-          <a href="https://codepen.io/bob-vader" className="social-list__link">
-            <i className="fab fa-codepen"></i>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://stackoverflow.com/users/14505931/nic"
+            className="social-list__link"
+          >
+            <i className="fab fa-stack-overflow"></i>
           </a>
         </li>
         <li className="social-list__item">
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/nicholas-hartman-86201050/"
             className="social-list__link"
           >
@@ -21,12 +28,19 @@ const Footer = () => {
           </a>
         </li>
         <li className="social-list__item">
-          <a href="https://twitter.com/nich_hart" className="social-list__link">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/nich_hart"
+            className="social-list__link"
+          >
             <i className="fab fa-twitter"></i>
           </a>
         </li>
         <li className="social-list__item">
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/Hartman-Nicholas"
             className="social-list__link"
           >

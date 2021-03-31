@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import nexterHome from "../../img/5_nexterHome.png";
-import nexterSample from "../../img/18_nexterSample.png";
+import emailyHome from "../../img/09_EmailyHome.jpg";
+import emailySample from "../../img/10_EmailySample.jpg";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Nexter = () => {
+const Emaily = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -27,20 +27,24 @@ const Nexter = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            The title <strong>of my project</strong>
+            Emaily <strong>Surveys</strong>
           </h1>
-          <p className="section__subtitle section__subtitle--intro">SignUp</p>
-          <Img src={nexterHome} alt="profile" className="intro__img"></Img>
+          <p className="section__subtitle section__subtitle--intro">
+            Your survey partner.
+          </p>
+          <Img src={emailyHome} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="portfolio-item-p">
+            This app allows the user to create email surveys that can be sent
+            out to a list of recipients, the recipients can then complete the
+            survey and the responses from the survey are displayed on the user
+            dashboard.
           </p>
           <Img
             className="portfolio-item-img"
-            src={nexterSample}
+            src={emailySample}
             alt="Computer"
           ></Img>
           <p>
@@ -48,7 +52,7 @@ const Nexter = () => {
             Fullstack Web Development course on{" "}
             <a
               className="portfolio-item-a"
-              href="https://www.udemy.com/course/node-with-react-fullstack-web-development/s"
+              href="https://www.udemy.com/course/node-with-react-fullstack-web-development/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -70,7 +74,7 @@ const Nexter = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.hartofcode.com/projects/nexter/"
+            href="https://hartman-emaily.herokuapp.com/"
             className="btn portfolio__nav-website"
           >
             *To Website
@@ -87,10 +91,11 @@ const Nexter = () => {
             load thank you for your patience.
           </p>
         </div>
+
         <Footer />
       </Section>
     </ThemeProvider>
   );
 };
 
-export default Nexter;
+export default Emaily;

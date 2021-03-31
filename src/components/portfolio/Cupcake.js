@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import nexterHome from "../../img/5_nexterHome.png";
-import nexterSample from "../../img/18_nexterSample.png";
+import cupcakeHome from "../../img/20_cupcakeHome.jpg";
+import cupcakeSample from "../../img/12_cupcakeSample.jpg";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Nexter = () => {
+const Cupcake = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -27,42 +27,46 @@ const Nexter = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            The title <strong>of my project</strong>
+            Munamii <strong>Cakey</strong>
           </h1>
-          <p className="section__subtitle section__subtitle--intro">SignUp</p>
-          <Img src={nexterHome} alt="profile" className="intro__img"></Img>
+          <p className="section__subtitle section__subtitle--intro">
+            Cake Heaven
+          </p>
+          <Img src={cupcakeHome} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="portfolio-item-p">
+            Mock proposal for Munamii cake website that sells cup cakes and
+            wedding cakes. It has a products page as well as about us page and
+            contact us page.
           </p>
           <Img
             className="portfolio-item-img"
-            src={nexterSample}
+            src={cupcakeSample}
             alt="Computer"
           ></Img>
           <p>
-            The App was developed following Stephen Grider's Node with React:
-            Fullstack Web Development course on{" "}
+            {" "}
+            Website developed during the Software Developement Academy (
             <a
               className="portfolio-item-a"
-              href="https://www.udemy.com/course/node-with-react-fullstack-web-development/s"
+              href="https://www.kth.se/en/itm/sda/software-development-academy-1.841849"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Udemy.
-            </a>{" "}
-            However the styling was completely redone by myself using native CSS
-            and SASS. I also used Final Form instead of Redux Form.
+              SDA
+            </a>
+            ) FrontEnd Module we where provided with a client scope to follow,
+            main objective was for us to learn HTML semantic tags, responsive
+            design using a mobile first approach and Native CSS. Course lead by
+            Eduardo Alvarez of KTH.
           </p>
           <h3>Some of the Technologies used to create this App.</h3>
           <ul>
-            <li>React, Redux, CSS with SASS for FrontEnd</li>
-            <li>Node, Express, MongoDB for BackEnd</li>
-            <li>Stripe for processing payments</li>
-            <li>Google OAuth for Authentication</li>
+            <li>HTML</li>
+            <li>CSS with SASS</li>
+            <li>JavaScript</li>
           </ul>
         </div>
 
@@ -70,7 +74,7 @@ const Nexter = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.hartofcode.com/projects/nexter/"
+            href="https://www.hartofcode.com/projects/cupcake/"
             className="btn portfolio__nav-website"
           >
             *To Website
@@ -87,10 +91,11 @@ const Nexter = () => {
             load thank you for your patience.
           </p>
         </div>
+
         <Footer />
       </Section>
     </ThemeProvider>
   );
 };
 
-export default Nexter;
+export default Cupcake;

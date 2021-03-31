@@ -37,24 +37,42 @@ const Natours = () => {
 
         <div className="portfolio-item-individual">
           <p className="portfolio-item-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Mock up of an outdoor adventure tour group website, where users can
+            select the tour that suits their Adventure needs.
           </p>
-          <Img src={natoursSample} alt="Computer"></Img>
+          <Img
+            className="portfolio-item-img"
+            src={natoursSample}
+            alt="Computer"
+          ></Img>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The App was developed following Jonas Schmedtmann's course on
+            Advanced CSS and Sass: Flexbox, Grid, Animations and More on{" "}
+            <a
+              className="portfolio-item-a"
+              href="https://www.udemy.com/course/advanced-css-and-sass/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Udemy.
+            </a>{" "}
+            Jonas builds this webpage using floats and I refactored it to use
+            CSS Grid and Flexbox technology.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <h3>Some of the Technologies used to create this App.</h3>
+          <ul>
+            <li>HTML, and CSS with SASS</li>
+            <li>NPM</li>
+            <li>Responsive Images</li>
+            <li>Media Queries</li>
+            <li>CSS Grid and Flexbox</li>
+          </ul>
         </div>
 
         <div className="portfolio__nav">
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.hartofcode.com/projects/natours/"
             className="btn portfolio__nav-website"
           >

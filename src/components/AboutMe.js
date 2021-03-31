@@ -1,5 +1,5 @@
 import React from "react";
-import ImgAboutMe from "../img/3_NicAndChildren.png";
+import ImgAboutMe from "../img/3_NicAndChildren.jpg";
 import Img from "../styles/components/img";
 
 const AboutMe = () => {
@@ -12,16 +12,17 @@ const AboutMe = () => {
 
       <div className="about-me__body">
         <p>
-          Grew up in Sunny South Africa in a small community just outside of
-          Durban, where I spent most of my days between my love of Squash and
-          outdoors with my friends. In 2011 moved up to Johannesburg where I
-          honed my business skills and understanding.
+          Grew up in Durban South Africa, where you would find me either
+          outdoors, on the squash court or in-front of a computer. In 2011 moved
+          up to SA's business hub Johannesburg where I developed my business and
+          sales skills.
         </p>
         <p>
           With the birth of my son and daughter there was shift in priorities
-          and it was off to Stockholm for a safer and more relaxed lifestyle.
-          During this time I rediscovered my love for technology and have been
-          completely taken in with the developer life style.
+          and stable long term goals became a priority. Stockholm Sweden offered
+          everything we where looking for and we jumped at the opportunity to
+          move. Since the move I have rediscovered my love for technology and
+          have been completely taken in with the developer life style.
         </p>
       </div>
 

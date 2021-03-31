@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Natours = () => {
+const SignUp = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -27,34 +27,52 @@ const Natours = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            Natours <strong>Outdoors</strong>
+            SignIn <strong>SignUp</strong>
           </h1>
           <p className="section__subtitle section__subtitle--intro">
-            Where life happens
+            OAuth Login
           </p>
           <Img src={signUp} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
           <p className="portfolio-item-p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The site consists solely of a Login page with OAuthLogin methods for
+            Google, linkedIn, Twitter and Facebook. As well as a normal login
+            connected to a backend DataBase.
           </p>
-          <Img src={signUp2} alt="Computer"></Img>
+          <Img
+            className="portfolio-item-img"
+            src={signUp2}
+            alt="Computer"
+          ></Img>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            This project I setup myself to practice handling OAuth and User
+            Login using passportjs. The FrontEnd design was following a{" "}
+            <a
+              className="portfolio-item-a"
+              href="https://www.youtube.com/watch?v=piG91X4sV2U&t=6s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              video
+            </a>{" "}
+            guide by True Coder, however I had to do major changes to get it
+            working with React. (Original video was done in HTML). Currently
+            Google OAuth is setup rest to follow.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <h3>Some of the Technologies used to create this App.</h3>
+          <ul>
+            <li>React and React Transition with CSS for the FrontEnd</li>
+            <li>Node, Express, MongoDB for BackEnd</li>
+            <li>Passportjs for OAuth</li>
+          </ul>
         </div>
 
         <div className="portfolio__nav">
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://hartman-signup.herokuapp.com/"
             className="btn portfolio__nav-website"
           >
@@ -79,4 +97,4 @@ const Natours = () => {
   );
 };
 
-export default Natours;
+export default SignUp;

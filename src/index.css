@@ -53,6 +53,7 @@ section {
 
 .btn {
   display: inline-block;
+  border-radius: 4px;
   padding: 0.5em 2.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
@@ -63,6 +64,7 @@ section {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  box-shadow: var(--bs);
 }
 
 .btn:hover {
@@ -284,7 +286,7 @@ h3 {
   }
 
   .intro {
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
     display: grid;
     width: min-content;
     grid-column-gap: 1em;
@@ -320,11 +322,6 @@ h3 {
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
-  transform: skewY(-7deg);
-}
-
-.my-services > * {
-  transform: skewY(7deg);
 }
 
 .section__title--services {
@@ -441,13 +438,23 @@ h3 {
 }
 
 .portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
+.portfolio__img:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.75;
 }
 
 .portfolio-item-p {
   margin-top: -3rem;
+}
+
+.portfolio-item-a {
+  text-decoration: none;
+  color: var(--clr-accent);
+}
+
+.portfolio-item-img {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 600px) {
@@ -550,7 +557,7 @@ h3 {
   padding: 0 2em 2em;
   max-width: 1000px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .portfolio-item-individual p {
@@ -568,7 +575,7 @@ h3 {
 .portfolio__nav-website,
 .portfolio__nav-projects {
   margin-left: 1em;
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .portfolio__nav p {
@@ -580,6 +587,7 @@ h3 {
 
 @media (min-width: 600px) {
   .portfolio__nav-projects {
+    margin-top: 2em;
     float: right;
     margin-right: 1em;
   }
@@ -593,7 +601,7 @@ h3 {
 
 .certPortfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   grid-gap: 30px;
   justify-items: center;
   padding: 1rem;
@@ -613,6 +621,7 @@ h3 {
 }
 
 .section__cert--title {
+  margin-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   width: 100%;
@@ -628,9 +637,22 @@ h3 {
   margin-top: 1.5rem;
 }
 
+@media (min-width: 1100px) {
+  .section__cert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+    padding-bottom: 6rem;
+    padding-top: 0rem;
+    margin-top: -4rem;
+  }
+}
+
 @media (min-width: 600px) {
   .certPortfolio {
-    max-width: 1000px;
+    max-width: 1100px;
     max-height: 500px;
     overflow: auto;
   }
@@ -662,10 +684,6 @@ h3 {
     padding-bottom: 6rem;
     padding-top: 0rem;
     margin-top: -4rem;
-  }
-
-  .section__cert--title {
-    width: 60%;
   }
 }
 

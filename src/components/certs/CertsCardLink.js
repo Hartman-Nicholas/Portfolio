@@ -10,14 +10,16 @@ import { blue } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    width: 340,
   },
 
   avatar: {
     backgroundColor: blue[500],
   },
   img: {
-    objectFit: "fill",
+    maxHeight: "300px",
+    width: "auto",
+    margin: "0 auto",
     [theme.breakpoints.down("sm")]: {
       paddingBottom: "2rem",
     },
@@ -36,9 +38,11 @@ const useStyles = makeStyles((theme) => ({
 
 const CertsCardLink = (props) => {
   const classes = useStyles();
+  const certObject = require(`../../certificates/LinkedIn/${props.info.img}`);
+  const certURL = certObject.default;
 
   return (
-    <Card className={classes.root && classes.hover}>
+    <Card className={classes.root}>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -51,7 +55,7 @@ const CertsCardLink = (props) => {
         component="img"
         alt={props.info.title}
         height="240"
-        src={props.info.img}
+        src={certURL}
         title={props.info.title}
       />
       <CardContent className={classes.media}>

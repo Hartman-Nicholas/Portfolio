@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Emaily = () => {
+const Trillo = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -38,21 +38,38 @@ const Emaily = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Img src={trilloSample} alt="Computer"></Img>
+          <Img
+            className="portfolio-item-img"
+            src={trilloSample}
+            alt="Computer"
+          ></Img>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The App was developed following Stephen Grider's Node with React:
+            Fullstack Web Development course on{" "}
+            <a
+              className="portfolio-item-a"
+              href="https://www.udemy.com/course/node-with-react-fullstack-web-development/s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Udemy.
+            </a>{" "}
+            However the styling was completely redone by myself using native CSS
+            and SASS. I also used Final Form instead of Redux Form.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <h3>Some of the Technologies used to create this App.</h3>
+          <ul>
+            <li>React, Redux, CSS with SASS for FrontEnd</li>
+            <li>Node, Express, MongoDB for BackEnd</li>
+            <li>Stripe for processing payments</li>
+            <li>Google OAuth for Authentication</li>
+          </ul>
         </div>
 
         <div className="portfolio__nav">
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.hartofcode.com/projects/trillo/"
             className="btn portfolio__nav-website"
           >
@@ -76,4 +93,4 @@ const Emaily = () => {
   );
 };
 
-export default Emaily;
+export default Trillo;

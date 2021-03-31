@@ -5,9 +5,11 @@ import * as myWork from "../components/infoObjects/MyWorkInfo";
 const MyWork = () => {
   const renderWorkList = () => {
     const workPortfolio = myWork.myWork.map((value) => {
+      const certObject = require(`../img/${value.img}`);
+      const certURL = certObject.default;
       return (
         <a key={value.id} href={value.link} className="portfolio__item">
-          <Img src={value.img} alt={value.alt} className="portfolio__img"></Img>
+          <Img src={certURL} alt={value.alt} className="portfolio__img"></Img>
         </a>
       );
     });

@@ -8,6 +8,7 @@ const Button = styled.button`
   text-decoration: none;
   cursor: pointer;
   font-size: 0.8rem
+  border-radius: 4px;
 
 
   color: ${(props) => props.theme.text};

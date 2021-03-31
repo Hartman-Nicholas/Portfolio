@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import nexterHome from "../../img/5_nexterHome.png";
-import nexterSample from "../../img/18_nexterSample.png";
+import pokedexHome from "../../img/8_pokeDexHome.png";
+import pokedexSample from "../../img/15_pokedexSample.jpg";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Nexter = () => {
+const Cupcake = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -27,42 +27,47 @@ const Nexter = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            The title <strong>of my project</strong>
+            SDA-9 <strong>PokeDex</strong>
           </h1>
-          <p className="section__subtitle section__subtitle--intro">SignUp</p>
-          <Img src={nexterHome} alt="profile" className="intro__img"></Img>
+          <p className="section__subtitle section__subtitle--intro">
+            Gotta catch 'Em All!
+          </p>
+          <Img src={pokedexHome} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="portfolio-item-p">
+            PokeDex where the user can enter the name of the Pokemon and the
+            PokeDex will return key stats for that Pokemon.
           </p>
           <Img
             className="portfolio-item-img"
-            src={nexterSample}
+            src={pokedexSample}
             alt="Computer"
           ></Img>
           <p>
-            The App was developed following Stephen Grider's Node with React:
-            Fullstack Web Development course on{" "}
+            {" "}
+            Website developed during the Software Developement Academy (
             <a
               className="portfolio-item-a"
-              href="https://www.udemy.com/course/node-with-react-fullstack-web-development/s"
+              href="https://www.kth.se/en/itm/sda/software-development-academy-1.841849"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Udemy.
-            </a>{" "}
-            However the styling was completely redone by myself using native CSS
-            and SASS. I also used Final Form instead of Redux Form.
+              SDA
+            </a>
+            ) Programming in-depth Module where we were practising fetching data
+            using axios and async await. I decided to combine this with creating
+            a small FrontEnd for the user input, styled with Tailwind CSS, and
+            then do the coding using Typescript for practice. Course lead by
+            Kwabena Asante-Poku of KTH.
           </p>
           <h3>Some of the Technologies used to create this App.</h3>
           <ul>
-            <li>React, Redux, CSS with SASS for FrontEnd</li>
-            <li>Node, Express, MongoDB for BackEnd</li>
-            <li>Stripe for processing payments</li>
-            <li>Google OAuth for Authentication</li>
+            <li>React</li>
+            <li>Axios</li>
+            <li>TypeScript</li>
+            <li>Tailwind</li>
           </ul>
         </div>
 
@@ -70,7 +75,7 @@ const Nexter = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.hartofcode.com/projects/nexter/"
+            href="https://hartman-pokedex.herokuapp.com/"
             className="btn portfolio__nav-website"
           >
             *To Website
@@ -87,10 +92,11 @@ const Nexter = () => {
             load thank you for your patience.
           </p>
         </div>
+
         <Footer />
       </Section>
     </ThemeProvider>
   );
 };
 
-export default Nexter;
+export default Cupcake;

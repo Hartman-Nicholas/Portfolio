@@ -14,7 +14,7 @@ import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
 import CertsCardLink from "./CertsCardLink";
-import CertsCardExp from "./CertsCardUdemy";
+import CertsCardUdemy from "./CertsCardUdemy";
 import * as udemy from "../infoObjects/CertsInfoUdemy";
 import * as linkedIn from "../infoObjects/CertsInfoLinkedin";
 
@@ -25,7 +25,7 @@ const Certs = () => {
   const renderUdemyCert = () => {
     const certs = udemy.udemy.map((value) => {
       return (
-        <CertsCardExp
+        <CertsCardUdemy
           key={value.id}
           className="section__cert--card"
           info={value}
