@@ -587,7 +587,6 @@ h3 {
 
 @media (min-width: 600px) {
   .portfolio__nav-projects {
-    margin-top: 2em;
     float: right;
     margin-right: 1em;
   }
@@ -635,6 +634,10 @@ h3 {
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-top: 1.5rem;
+}
+
+.section__cert--button {
+  margin-top: 2em;
 }
 
 @media (min-width: 1100px) {

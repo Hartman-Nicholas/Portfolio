@@ -86,7 +86,7 @@ const Certs = () => {
           <HashLink
             to="/#TechStack"
             smooth={true}
-            className="btn portfolio__nav-projects"
+            className="btn portfolio__nav-projects section__cert--button"
           >
             Back to Tech Stack
           </HashLink>
