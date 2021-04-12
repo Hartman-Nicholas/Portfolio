@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import cupcakeHome from "../../img/20_cupcakeHome.jpg";
-import cupcakeSample from "../../img/12_cupcakeSample.jpg";
+import packagerHome from "../../img/21_packagerHome.jpg";
+import packagerSample from "../../img/22_packagerSample.jpg";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Cupcake = () => {
+const ChatApp = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -27,24 +27,25 @@ const Cupcake = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            Munamii <strong>Cakey</strong>
+            Packager <strong>Delivery Tracking</strong>
           </h1>
           <p className="section__subtitle section__subtitle--intro">
-            Cake Heaven
+            Your Delivery Partner
           </p>
-          <Img src={cupcakeHome} alt="profile" className="intro__img"></Img>
+          <Img src={packagerHome} alt="profile" className="intro__img"></Img>
         </section>
 
         <div className="portfolio-item-individual">
           <p className="portfolio-item-p">
-            Mock proposal for Munamii cake website that sells cup cakes and
-            wedding cakes. It has a products page as well as about us page and
-            contact us page.
+            Mock proposal for Packager website a packaging company that allows
+            its users to login and view their packages and the packages
+            progress. It has live tracking with a web map and also a world view
+            to show where all the packages currently are.
           </p>
           <Img
             className="portfolio-item-img"
-            src={cupcakeSample}
-            alt="Computer"
+            src={packagerSample}
+            alt="Landing page for packager a man standing with some boxes a light grey background and a blue header."
           ></Img>
           <p>
             {" "}
@@ -57,16 +58,20 @@ const Cupcake = () => {
             >
               SDA
             </a>
-            ) FrontEnd Module we where provided with a client scope to follow,
-            main objective was for us to learn HTML semantic tags, responsive
-            design using a mobile first approach and Native CSS. Course lead by
-            Eduardo Alvarez of KTH.
+            ) FrontEnd Module where we were provided with a client scope to
+            follow, main objective was for us to practice Reactjs, fetching API
+            data, mobile first development and CSS styling. As I had practiced
+            react in the past I used the opportunity to also implement a
+            language switching feature which was an extra feature requested in
+            the project. I also added in the google maps API as an extra.
           </p>
           <h3>Some of the Technologies used to create this App.</h3>
           <ul>
-            <li>HTML</li>
+            <li>Reactjs</li>
+            <li>Typescript</li>
+            <li>React-router-dom</li>
             <li>CSS with SASS</li>
-            <li>JavaScript</li>
+            <li>Axios</li>
           </ul>
         </div>
 
@@ -74,7 +79,7 @@ const Cupcake = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.hartofcode.com/projects/cupcake/"
+            href="https://hartman-packager.web.app/"
             className="btn portfolio__nav-website"
           >
             *To Website
@@ -98,4 +103,4 @@ const Cupcake = () => {
   );
 };
 
-export default Cupcake;
+export default ChatApp;

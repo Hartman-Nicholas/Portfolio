@@ -59,7 +59,7 @@ const Certs = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            Self-Study <strong>of my project</strong>
+            Self-Study <strong>my progress</strong>
           </h1>
           <p className="section__cert--heading">Certifications</p>
           <img src={study} alt="profile" className="section__cert--img"></img>

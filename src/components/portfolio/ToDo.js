@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
-import cupcakeHome from "../../img/20_cupcakeHome.jpg";
-import cupcakeSample from "../../img/12_cupcakeSample.jpg";
+import todoHome from "../../img/23_todoHome.png";
+import todoSample from "../../img/24_todoSample.png";
 import Img from "../../styles/components/img";
 import Section from "../../styles/components/Section";
 import Header from "../Header";
@@ -12,7 +12,7 @@ import darkTheme from "../../styles/themes/darkTheme";
 import Toggle from "../../styles/components/toggle";
 import { HashLink } from "react-router-hash-link";
 
-const Cupcake = () => {
+const ChatApp = () => {
   const nav = useSelector((state) => state.nav);
   const theme = useSelector((state) => state.theme);
 
@@ -27,24 +27,34 @@ const Cupcake = () => {
         <Header />
         <section className="intro">
           <h1 className="section__title section__title--intro">
-            Munamii <strong>Cakey</strong>
+            ToDo <strong>Tasks-saved</strong>
           </h1>
           <p className="section__subtitle section__subtitle--intro">
-            Cake Heaven
+            CLI Task Manager Application
           </p>
-          <Img src={cupcakeHome} alt="profile" className="intro__img"></Img>
+          <Img
+            src={todoHome}
+            alt="View page for a CLI application shows a ToDo logo with various command instructions."
+            className="intro__img"
+          ></Img>
         </section>
 
         <div className="portfolio-item-individual">
           <p className="portfolio-item-p">
-            Mock proposal for Munamii cake website that sells cup cakes and
-            wedding cakes. It has a products page as well as about us page and
-            contact us page.
+            A Command line interface (CLI) application that allows the user to
+            create a ToDo tasks in a list. The ToDo task consists of a Title,
+            Description, Project, Due Date and Status. The user can then view,
+            modify, and delete a ToDo, they are also able to mark the ToDo as
+            complete or incomplete. In the view list menu they will have the
+            option to sort by due date, sort by project type, filter by complete
+            and incomplete. Once the user has finished entering their tasks they
+            are able to save their ToDo list, they will also be able to load a
+            previously saved ToDo list and adjust accordingly.
           </p>
           <Img
             className="portfolio-item-img"
-            src={cupcakeSample}
-            alt="Computer"
+            src={todoSample}
+            alt="Landing page for a CLI application shows a ToDo logo with various command instructions."
           ></Img>
           <p>
             {" "}
@@ -57,16 +67,17 @@ const Cupcake = () => {
             >
               SDA
             </a>
-            ) FrontEnd Module we where provided with a client scope to follow,
-            main objective was for us to learn HTML semantic tags, responsive
-            design using a mobile first approach and Native CSS. Course lead by
-            Eduardo Alvarez of KTH.
+            ) Programming InDepth Module where we practised core Java concepts
+            such as high cohesion, low coupling, method naming, file
+            organisation, abstraction, Java documentation and unit testing. We
+            also practised our useage of GIT and Github.
           </p>
           <h3>Some of the Technologies used to create this App.</h3>
           <ul>
-            <li>HTML</li>
-            <li>CSS with SASS</li>
-            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Maven</li>
+            <li>Git and Github</li>
+            <li>Draw.io - for UML documentation</li>
           </ul>
         </div>
 
@@ -74,10 +85,10 @@ const Cupcake = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.hartofcode.com/projects/cupcake/"
+            href="https://github.com/Hartman-Nicholas/ToDo"
             className="btn portfolio__nav-website"
           >
-            *To Website
+            *To GitHub
           </a>
           <HashLink
             to="/#MyWork"
@@ -98,4 +109,4 @@ const Cupcake = () => {
   );
 };
 
-export default Cupcake;
+export default ChatApp;

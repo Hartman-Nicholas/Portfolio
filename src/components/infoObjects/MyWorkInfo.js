@@ -5,6 +5,13 @@ export const myWork = [
     img: "09_EmailyHome.jpg",
     alt: "Emaily homepage has the title emaily and nav bar.",
   },
+  {
+    id: 21,
+    link: "/project/packager",
+    img: "21_packagerHome.jpg",
+    alt:
+      "Landing page for packager a man standing with some boxes a light grey background and a blue header.",
+  },
   // {
   //   id: 5,
   //   link: "/project/nexter",
@@ -18,13 +25,7 @@ export const myWork = [
   //   alt:
   //     "Trillo landing page a site where people can book holidays and rate their experience.",
   // },
-  {
-    id: 7,
-    link: "/project/signUp",
-    img: "7_signUpHome.jpg",
-    alt:
-      "Landing page for sign up has a image of a sign in screen and rocket with a blue circle top left.",
-  },
+
   {
     id: 4,
     link: "/project/natours",
@@ -33,11 +34,25 @@ export const myWork = [
       "Sample of Natours home page showing a picture of the mountains with a green overlay.",
   },
   {
+    id: 23,
+    link: "/project/ToDo",
+    img: "23_todoHome.png",
+    alt:
+      "Landing page for a CLI application shows a ToDo logo with various command instructions.",
+  },
+  {
     id: 8,
     link: "/project/pokeDex",
     img: "8_pokeDexHome.png",
     alt:
       "Landing page for pokedex has a picture of a Pokemon charazard with his stats in red.",
+  },
+  {
+    id: 7,
+    link: "/project/signUp",
+    img: "7_signUpHome.jpg",
+    alt:
+      "Landing page for sign up has a image of a sign in screen and rocket with a blue circle top left.",
   },
 
   {

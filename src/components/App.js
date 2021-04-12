@@ -10,6 +10,8 @@ import Emaily from "./portfolio/Emaily";
 import Cupcake from "./portfolio/Cupcake";
 import ChatApp from "./portfolio/ChatApp";
 import PokeDex from "./portfolio/PokeDex";
+import Packager from "./portfolio/Packager";
+import ToDo from "./portfolio/ToDo";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Route path="/project/cupcake" exact component={Cupcake} />
         <Route path="/project/chatapp" exact component={ChatApp} />
         <Route path="/project/pokedex" exact component={PokeDex} />
+        <Route path="/project/packager" exact component={Packager} />
+        <Route path="/project/ToDo" exact component={ToDo} />
         <Route path="/certs/Certs" exact component={Certs} />
       </Switch>
     </BrowserRouter>

@@ -9,7 +9,7 @@ import { ReactComponent as HtmlLogo } from "../img/HTML5_Logo.svg";
 import { ReactComponent as JavascriptLogo } from "../img/javascript-4.svg";
 import { ReactComponent as MongodbLogo } from "../img/mongodb.svg";
 import { ReactComponent as JavaLogo } from "../img/java-4.svg";
-// import { ReactComponent as SpringLogo } from "../img/spring-3.svg";
+import { ReactComponent as SpringLogo } from "../img/spring-3.svg";
 // import { ReactComponent as MySQLLogo } from "../img/mysql-5.svg";
 import { ReactComponent as NpmLogo } from "../img/npm-2.svg";
 import typeScriptLogo from "../img/typescript-programming-language.svg";
@@ -61,7 +61,7 @@ const TechStack = () => {
           fill={theme ? "#e76f00" : "#f8f9fa"}
           className="techStack__svg"
         />
-        {/* <SpringLogo className="techStack__svg" /> */}
+        <SpringLogo className="techStack__svg" />
         {/* <MySQLLogo
           fill={theme ? "#f8f9fa" : "#303030"}
           className="techStack__svg"

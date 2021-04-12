@@ -47,7 +47,7 @@ const Cupcake = () => {
           ></Img>
           <p>
             {" "}
-            Website developed during the Software Developement Academy (
+            Website developed during the Software Development Academy (
             <a
               className="portfolio-item-a"
               href="https://www.kth.se/en/itm/sda/software-development-academy-1.841849"
