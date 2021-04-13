@@ -1,17 +1,18 @@
 export const myWork = [
   {
-    id: 9,
-    link: "/project/emaily",
-    img: "09_EmailyHome.jpg",
-    alt: "Emaily homepage has the title emaily and nav bar.",
-  },
-  {
     id: 21,
     link: "/project/packager",
     img: "21_packagerHome.jpg",
     alt:
       "Landing page for packager a man standing with some boxes a light grey background and a blue header.",
   },
+  {
+    id: 9,
+    link: "/project/emaily",
+    img: "09_EmailyHome.jpg",
+    alt: "Emaily homepage has the title emaily and nav bar.",
+  },
+
   // {
   //   id: 5,
   //   link: "/project/nexter",

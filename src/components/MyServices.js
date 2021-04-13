@@ -27,9 +27,9 @@ const MyServices = () => {
         <div className="service">
           <h3>BackEnd</h3>
           <p>
-            Fast and reliable backends using Node.js with express, graphql, and
-            axios connected to a Mongodb database. I have also started learning
-            Java spring boot connected to a mySQL database.
+            Fast and reliable backends using Node.js with express, and axios
+            connected to a Mongodb database. I have also started learning Java
+            spring boot Hibernate connected to a PostgreSQL database.
           </p>
         </div>
       </div>
